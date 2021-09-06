@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto web G4</title>
+    <style>
+        /* table{
+            border-collapse: collapse;
+            width: 30%;
+        }
+        th, td{
+            border: 2px solid green;
+            padding: 15px;
+        } */
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #eee;
+        }
+        tr:nth-child(odd){
+            background-color: #fff;
+        }
+        table#alter th{
+            color: white;
+            background-color: gray;
+        }
+
+    </style>
+
 </head>
 <body>
     <p>
@@ -30,8 +59,83 @@
         Rerum qui a quas. 
     </p>
     <br/>
-    <code>Tipo de letra code</code>
-    <small>Tipo de letra pequeña</small>
+    <code>Tipo de letra code</code><br/>
+    <small>Tipo de letra pequeña</small><br/>
+    <blockquote>información para imprimir bajo esta etiqueta</blockquote><br/>
+    <em>Etiquetas utilizado para manejo de Enfasis</em><br/>
+    <i>Etiqueta utilizado para el manejo de fuente tipo Italic</i><br/>
+    <pre>Formateado del texto</pre><br/>
+    <p>Esta es una <i>prueba</i> del manejo del tipo <strong>Texto tipo strong</strong>
+    para aprender a manejar esta etiqueta</p><br/>
+    <u>Esta es una forma de trabajar text subrayado</u>
+    <pre>Formateado del texto</pre>
+
+    <!--Etiquetas block // in line -->
+    <p>fkdhgjhgkdg</p>
+    <p>fkdhgjhgkdg hfjghdkhgkjdf</p>
+
+    <div id="bloque1">
+        <code>Tipo de letra code</code>
+        <code>Tipo de letra code</code>
+        
+    </div>
+    <div id="bloque2">
+        <small>Tipo de letra pequeña</small>
+    </div>
+    <hr/>
+    <!-- Imagenes / link -->
+    <img src="imagen1.jpg" width="100" heigth="100" alt="Esta es una imagen"> <br/>
+    <img src="http://placekitten.com/g/200/200" alt="Esta es una imagen"><br/>
+    <a href="https://www.google.com" target="_blank">Ir a Google</a><br/>
+    <a href="https://www.google.com"><img src="imagen1.jpg" width="100" heigth="100" alt="Esta es una imagen"> <br/></a><br/>
+
+    <!-- Listas Ordenadas-->
+    <ul>
+        <li><h4>Item 1</h4></li>
+        <li><h4>Item 2</h4></li>
+        <li><h4>Item 3</h4></li>
+        <li><h4><a href="https://www.google.com" target="_blank">Ir a google</a><br></h4></li>
+        <li><h4>Item 5</h4></li>
+    </ul>
+    <ol>
+        <li>Amarillo</li>
+        <li>Azul</li>
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Morado</li>
+    </ol>
+
+    <!-- Tabla -->
+    <table>
+        <tr>
+            <th colspan="4" align="center">Tabla principal de Usuarios</th>
+        </tr>
+        <tr>
+            <td align="center">Nombres </td>
+            <td align="center">Apellidos </td>
+            <td align="center">Correo </td>
+            <td>Tipo de Usuario</td>
+        </tr>
+        <tr>
+            
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>perez@gmail.com</td>
+            <td rowspan="2" align="center">Administrador</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Luna</td>
+            <td>luna@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Diaz</td>
+            <td>diaz@gmail.com</td>
+            <td align="center">General</td>
+        </tr>
+    </table>
+
 
 </body>
 </html>
