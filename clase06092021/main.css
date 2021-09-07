@@ -90,7 +90,17 @@ a:focus{ /*el link tiene el focus*/
     text-decoration-color: brown;
 }
 #texto{
+    width: 25em;
+    height: 15em;
+    background: chartreuse;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 120%;
     font-style: italic;
+    margin: 4em 4em 4em 4em;
+    padding: 4em 4em 4em 4em;
+    text-align: center;
+    border-style: solid;
+    border-radius: 2em;
+    border-width: 5px;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0) inset;
 }

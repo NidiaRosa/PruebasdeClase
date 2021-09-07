@@ -1,0 +1,20 @@
+.box{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    color: cornsilk;
+}
+#two{
+    position: relative;
+    background: blue;
+    top: 20px;
+    left: 20px;
+}
+
+#three{
+    position: absolute;
+    background: cadetblue;
+    top: 20px;
+    left: 20px;
+}
