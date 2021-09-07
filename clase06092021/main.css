@@ -1,3 +1,7 @@
+/* *{
+    border: teal;
+    background: wheat;
+} */
 /* body{
     background-color:coral;
     color: darkblue;
@@ -9,12 +13,12 @@ h1{
 h2{
     background: greenyellow;
     color: indigo;
-}
+}*/
 h1, h2{
     background: khaki;
     color: mediumblue;
 }
-p{
+/*p{
     background-color: mediumorchid;
     color: olivedrab;
 } 
@@ -29,6 +33,64 @@ p{
     color: black;
 }
 #golondrinas{
-    background: skyblue;
+    background: rgb(255, 214, 256);
     color: red;
+    /* margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 18em;
+    margin-right: 18em; */
+    margin: 4% 20% 4% 20%; /* margen de acuerdo a las manecillas del reloj */
+    border: 5px double red;
+    border-style:groove;
+    /* text-align: right; */
+    text-indent: 3em;
+    text-decoration: none;
+}
+article.poema{
+    margin-left: 4em;
+    border-style: dotted;
+    border-radius: 1em;
+
+}
+article.poema2{
+    margin-left: 8em;
+    border-style: double;
+    border-radius: 1em;    
+}
+div p{
+    background: yellow;
+    color: blue;
+    border-style: double;
+    border-radius: 1em;    
+}
+h1+p{
+    background: chartreuse;
+    color: darkmagenta;
+}
+a:link{
+    background: darkorange;
+    color: black;
+}
+a:hover{ /*cuando el mouse se desliza por el texto*/
+    background: chartreuse;
+    color: blue;    
+}
+a:active{ /*cambio de estilo al abandonar el click*/
+    background: darkorange;
+    color: darkred;
+}
+a:focus{ /*el link tiene el focus*/
+    background: black;
+    color: white;
+}
+#parrafo1{
+    text-transform: uppercase; /* convierte en texto en mayuscula */
+    text-shadow: 5px 10px 8px blue;
+    text-decoration-style: dotted;
+    text-decoration-color: brown;
+}
+#texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    font-style: italic;
 }
