@@ -1,0 +1,34 @@
+/* body{
+    background-color:coral;
+    color: darkblue;
+} 
+h1{
+    background: darkgoldenrod;
+    color: blue;
+}
+h2{
+    background: greenyellow;
+    color: indigo;
+}
+h1, h2{
+    background: khaki;
+    color: mediumblue;
+}
+p{
+    background-color: mediumorchid;
+    color: olivedrab;
+} 
+.verso{
+    margin-left: 10%;
+    background-color: palegreen;
+    color: red;
+}*/
+.verso2{
+    margin-left: 10%;
+    background-color: salmon;
+    color: black;
+}
+#golondrinas{
+    background: skyblue;
+    color: red;
+}
