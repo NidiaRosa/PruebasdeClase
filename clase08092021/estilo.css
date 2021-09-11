@@ -74,6 +74,11 @@ footer{
     aside{
         display: none;
     }
+    footer{
+        background: red;
+        text-decoration: underline;
+
+    }
 }
 @media screen and (max-width: 400px) and (max-width: 200px){
     header{
