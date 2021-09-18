@@ -20,10 +20,10 @@
         /* let numero;
         numero = prompt("Ingrese un numero: ");
         numero2= numero%2;
-        if numero2 == 0 {
+        if (numero2 == 0) {
             document.write("El numero es par");
         }else{
-            document.write("El numero es par");
+            document.write("El numero es impar");
         } */
 
         /*   2) Lea de pantalla un codigo, peso y est --> IMC ---> imc<=20---> delgada
@@ -31,8 +31,17 @@
                                                                 imc>=25 ----> sobrepeso  */
         /* let cod= prompt("Ingrese su codigo: ");
         let peso= prompt("Ingrese su peso: ");
-        let estatura = prompt("Ingrese su estatura: "); */
+        let estatura = prompt("Ingrese su estatura: ");
+        let imc = peso/Math.pow(estatura,2);
+        if (imc<=20){
+            document.write("Su IMC es de: "+imc.toFixed(2)+" y usted se encuentra es estado delgado");
+        }else if ((imc>20)&&(imc<25)){
+            document.write("Su IMC es de: "+imc.toFixed(2)+" y usted se encuentra en estado normal");
+        }else{
+            document.write("Su IMC es de: "+imc.toFixed(2)+" y usted se encuentra en estado de sobrepeso");
+        } */
 
+        /* Instruccion WHILE */
         /* let contador;
         contador = 5;
         while(contador>0){
@@ -40,27 +49,32 @@
             console.log("Hola mundo esta es la impresión: ",contador)
             contador--;
         } */
+        
         /* let contador=0;
         while(contador<20){
             document.write("<br/>Hola mundo esta es la impresión: ",contador);
             console.log("Hola mundo esta es la impresión: ",contador)
             contador++;
         } */
+        
+        
         /* let diasSemana=["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
         let cantidad = diasSemana.length-1;
         let i=0;
+        document.write("<br/>Impresion a traves de WHILE <br/>");
         while(i<=cantidad){
             document.write(diasSemana[i],"<br/>");
             i++;
         }
+
         document.write("<br/>Impresion a traves de FOR <br/>");
         for(let j=0;j<diasSemana.length;j++){
             document.write(diasSemana[j],"<br/>");
             console.log(diasSemana[j],"<br/>");
-        }
+        } */
 
-        let amigos=["Carlos", "William", "Jose Luis", "Pedro"];
-        document.write("<br/>Tengo un total de ", amigos.length, " amigos"); */
+        /* let amigos=["Carlos", "William", "Jose Luis", "Pedro"];
+        document.write("<br/>Tengo un total de ", amigos.length, " amigos");  */
 
         /* arreglovacio=[];
         let tam= prompt("Cuantos datos desea ingresar a lista: ");
@@ -68,33 +82,35 @@
             let valor=prompt("Ingrese el valor del dato");
             arreglovacio[i]=valor;
         }
-        arreglovacio.push("Carlos"); /* Agrega un elemento al final del arreglo */
-        /*arreglovacio.pop(); /* elimina el ultimo elemento */
+        
+        arreglovacio[10]="Juan";
+        arreglovacio.push("Carlos"); -- Agrega un elemento al final del arreglo 
+        arreglovacio.pop(); -- elimina el ultimo elemento
 
-        /*for (let j=0; j<arreglovacio.length; j++){
+        for (let j=0; j<arreglovacio.length; j++){
             document.write(arreglovacio[j],"<br/>");
             console.log(arreglovacio[j],"<br/>");
         } */
 
         /* Leer un arreglo de edades, y calcular el promedio de edades, el mayor y menor
         la impresion realizarla en el document // consola */
-        arregloedades=[];
-        let edades = [];
+        
+        /* let edades = [];
+        let edad;
         let prom=0;
         let max, min;
-        edades.push(prompt("Ingrese una edad: "));
-        /* let tam= prompt("Cuantas edades desea ingresar a lista: ");
+        let contador=0;
+        let tam = prompt("Cuantos datos desea ingresar a lista: ");
         for(let i=0; i<tam; i++){
-            let edad=prompt("Ingrese el valor de las edades: ");
-            arregloedades[i]=edad;
+            let edad=prompt("Ingrese la edad "+ (i+1)+": ");
+            edades[i]=edad;
         }
 
-        for (let j=0; j<arregloedades.length; j++){
-            let promedio = (arregloedades[j]++)/arregloedades.length;
-            
-            /* console.log(arreglovacio[j],"<br/>"); */
-        /*}
-        document.write(promedio,"<br/>"); */
+        Math.max.apply(null, edades);
+        Math.min.apply(null, edades);
+        
+        document.write(contador,"<br/>");
+        document.write(min,"<br/>"); */
                                                                 
     </script>
 
