@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        function validateform(){
+            let x= document.forms["frm1"]["documento"].value;
+            let y= document.forms["frm1"]["nombres"].value;
+            if ((x=="") || (y=="")){
+                alert("Debes ingresar datos en estos campos");
+                return false;
+            }
+        }
+    </script> -->
+
+
+</head>
+<body>
+       
+
+    <!-- <div id="main">
+        <p>1. Encontrando elementos HTML</p>
+        <p>2. Esto es un ejemplo</p>
+    </div>
+    
+    <p id="union"></p> -->
+
+    <!-- <p>Encontrar codigo HTML</p>
+    <p>Codigo HTML localizado</p>
+    <p id="union"></p> -->
+
+    <!-- <p id="llamado">No quiero saludar</p>
+    <p id ="union"></p>
+
+    <h1 id="titulo">Titulo de nuestra Páginas WEB</h1>
+    <p>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint neque, voluptas est quam, nihil ad quibusdam rem, dignissimos molestiae officiis dolorum. Inventore expedita quis voluptatum unde explicabo reiciendis doloribus exercitationem.</p>
+    <p id="segundo">2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse sequi voluptatem, quas magni et doloremque suscipit magnam eligendi, unde expedita ad officiis nisi reiciendis. Fugiat molestias culpa labore distinctio rem.</p>
+    <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestiae illum sint vel quis repellendus? Quisquam architecto tempora sit maiores perferendis sed nobis, nisi amet, illum sunt laboriosam accusamus fugit?</p> -->
+    <!-- <h1>Ejercicio de Javascript</h1>
+    <p class="clase">0. Encontrando elementos HTML</p>
+    <p class="clase">1. Encontrando elementos HTML</p>
+    <p>2. Esto es un ejemplo</p>
+    <b>Elemento de tipo B</b> -->
+
+    <!-- <h2>TITULO XXXXX</h2>
+    <p>Encontrar elementos por query Selector</p>
+    <p class="intro">Hola a todos!!!</p>
+    <p class="intro">Como estan todos?</p>
+    <p class="intro2">Respuesta desde el intro 2</p>
+    <b>Query Selector........</b> -->
+
+    <!-- <form id="frm1" action="">
+        Primer Nombre: <input type="text" name="fname" value="Oscar"> <br/><br/>
+        Segundo Nombre: <input type="text" name="sname" value="Diaz"> <br/><br/>
+        <input type="submit" value="Ingresar datos">
+    </form>
+    <br/>
+    <p>Esta es una prueba de ingreso de valores</p>
+    <p id="union">Resultado: </p> -->
+
+    <!-- <img id= "miImagen" src="http://placekitten.com/100/100" alt="Imagen"> -->
+
+    <!-- <p>Fecha actual: </p>
+    <p id="datoSistemas">Fecha Actual?</p> -->
+
+    <!-- <form id="frm1" action="" onsubmit="return validateform()" method="POST">
+        Documento: <input type="text" name="documento" value="Diligenciar"> <br/><br/>
+        Nombres: <input type="text" name="nombres" value="Diligenciar"> <br/><br/>
+        <input type="submit" value="Ingresar">
+    </form>
+    <br/> -->
+
+    <!-- <p id="propiedad">Vamos a probar cambio de propiedad</p> -->
+
+    <h1 id="id1" onclick="cambiarTexto(this)">Cambio 1</h1>
+    <p id="p1">
+        Cambios a este texto,
+        Cambios a este texto,
+        Cambios a este texto,
+        Cambios a este texto, 
+    </p>
+    <input type="button" value="ocultar texto" onclick="document.getElementById('p1').style.visibility='hidden'"> 
+    <input type="button" value="mostrar texto" onclick="document.getElementById('p1').style.visibility='visible'">
+    <button type="button" onclick="document.getElementById('id1').style.color='red'">Dar click aquí para ver efecto</button>
+
+
+    <script>
+        function cambiarTexto(id){
+            id.innerHTML="Nuevo cambio desde la función";
+            alert("Hemos terminado DOM...");
+        }
+
+        //let elementosP = document.getElementsByTagName("p");
+        //let segundoParrafo = document.getElementById("segundo");
+        /* propiedad innerHTML */
+        /* const elemento = document.getElementById("llamado");
+        //document.getElementById("llamado").innerHTML="Hola a todos";
+        document.getElementById("union").innerHTML="Ahora si quiero saludarlos.."+elemento.innerHTML; */
+
+        /* const elemento = document.getElementsByTagName("p");
+        document.getElementById("union").innerHTML= "La impresión sería .. "+elemento[1].innerHTML; */
+
+        //Encontrar elementos por CLASE
+        
+        /* const x = document.getElementById("main");
+        const y = x.getElementsByTagName("p");
+        document.getElementById("union").innerHTML= "Primer elemento main  "+y[0].innerHTML; */
+
+        /* const x = document.getElementsByClassName("clase");
+        document.getElementById("union").innerHTML="Elemento de la clase: "+x[0].innerHTML; */
+
+        /* const x = document.querySelectorAll("p.intro");
+        document.getElementById("union").innerHTML="Resultado..... "+x[0].innerHTML+x[1].innerHTML; */        
+              
+        /* const x=document.forms["frm1"];
+        let text = "";
+        for(let i=0; i<x.length; i++){
+            text+=x.elements[i].value+"<br/>";
+        }
+        document.getElementById("union").innerHTML=text; */
+
+        /* document.getElementById("miImagen").src="http://placekitten.com/500/500" */
+
+        /* document.getElementById("datoSistemas").innerHTML="Date : "+Date();
+        document.write(Date()); */
+
+        /* document.getElementById("propiedad").style.color="blue"; */
+
+    </script>
+</body>
+</html>
